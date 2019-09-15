@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forma</title>
+    <style>
+
+
+    </style>
+</head>
+
+<body>
+    <form method="post">
+        <fieldset>
+            <legend>Jūsų informacija</legend>
+                <table>
+                    <tr>
+                        <td><label for="vardas">Vardas:</label></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="pavarde">Pavardė:</label></td>
+                        <td><input type="text"></td>
+                    </tr>
+                </table>
+
+        </fieldset>
+    </form>
+    <form>
+        <fieldset>
+            <legend>Klausimai</legend>
+            <div>Kaip sužinojote apie mus?
+                <select name="saltinis" size="1">
+                    <option value="Google" selected="selected">Google</option>
+                    <option value="Draugai">Draugai</option>
+                    <option value="Skelbimas">Skelbimas</option>
+                    <option value="Facebook" >Facebook</option>
+                </select>
+            </div>
+            <p style="margin-bottom: 0px">Ar apsilankysite vėl?</p>
+                <form>
+                  <input type="radio" name="taip" value="Taip">Taip
+                  <input type="radio" name="ne" value="Ne"> Ne
+                  <input type="radio" name="galbut" value="Galbūt"> Galbūt
+                </form>
+            <br>
+            <br>
+            <div>Ką manote apie kursą?</div>
+                <textarea name="apie" cols="80" rows="7" placeholder="Rašykite viską ką galvojate"></textarea>
+            <br>
+            <br>
+            <div>Pažymėkite programavimo kalbas su kuriomis esate susipažinę:</div>
+                <table>
+                    <tr>
+                        <td><input type="checkbox" value="c">C#</td>
+                        <td><input type="checkbox" value="java">Java</td>
+                        <td><input type="checkbox" value="php">PHP</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" value="html">HTML</td>
+                        <td><input type="checkbox" value="css">CSS</td>
+                        <td><input type="checkbox" value="js">JacaScript</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" value="php">PHP</td>
+                        <td><input type="checkbox" value="js">JavaScript</td>
+                        </tr>
+            </table>
+
+            <p><input type="submit" value="Siūsti"></p>
+        </fieldset>
+    </form>
+</body>
+</html>
