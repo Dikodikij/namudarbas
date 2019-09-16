@@ -4,27 +4,36 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML5</title>
-    <style>
-        figure {
-        margin: 0 0 0 40px;
-        text-align: left;
-        }
+        <style>
+            figure {
+                margin: 0 0 0 40px;
+                text-align: left;
+            }
 
-        figcaption {
-            font-size: 80%;
-        }
-    </style>
+            figcaption {
+                font-size: 80%;
+            }
+            .zucchini {
+                width: 330px;
+            }
+            .chocolate {
+                width: 330px;
+            }
+            .lemon, .brussel, .cake {
+                width: 110px;
+            }
+        </style>
 </head>
 
     <body>
-        <img src="foto/logo.gif" width="400" alt="From A to Zucchini">
+        <img class="zucchini" src="foto/logo.gif" alt="From A to Zucchini">
         <figure>
-            <img src="foto/chocolate-islands.jpg" alt="Chocolate islands" width="380">
+            <img class="chocolate" src="foto/chocolate-islands.jpg" alt="Chocolate islands">
             <figcaption>This recipe for individual chocolate cakes is so simple and so delectable!</figcaption>
         </figure>
         <h4>More recipes:</h4>
-        <img src="foto/lemon-posset.jpg" alt="lemon posset" width="130">
-        <img src="foto/roasted-brussel-sprouts.jpg" alt="Roasted brussel sprouts" width="130" left>
-        <img src="foto/zucchini-cake.jpg" alt="Zucchini cake" width="130" left>
+        <img class="lemon" src="foto/lemon-posset.jpg" alt="lemon posset">
+        <img class="brussel" src="foto/roasted-brussel-sprouts.jpg" alt="Roasted brussel sprouts">
+        <img class="cake" src="foto/zucchini-cake.jpg" alt="Zucchini cake">
     </body>
 </html>
