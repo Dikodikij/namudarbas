@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS8</title>
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+</head>
+<body>
+    <h1>Registracija į renginį</h1>
+    <div class="forma">
+        <h2>Registracijos forma</h2>
+        <p>Jeigu norite užsiregistruoti į renginį, užpildykite žemiau esančią formą. Žemiau lentelėje
+            galite matyti jau <br>užsiregistravusius dalyvius.</p>
+                <table class="pirma">
+                    <tr>
+                        <td class="vardas">Vardas</td>
+                        <td class="name"><input type="text" name="name"></td>
+                    </tr>
+                    <tr>
+                        <td class="pavarde">Pavardė</td>
+                        <td><input type="text" name="surname"></td>
+                    </tr>
+                    <tr>
+                        <td>Elektroninis paštas</td>
+                        <td><input type="text" name="email"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input class="registruoti" type="submit" value="Registruoti">
+                        </td>
+                </table>
+    </div>
+    <br>
+    <div class="dalyviai">
+        <h2>Jau užsiregistravę dalyviai:</h2>
+            <table class="table2">
+                <tr class="pirma_eilute">
+                    <th class="vardas-ilgis">Vardas</th>
+                    <th>Pavardė</th>
+                    <th>Elektroninis paštas</th>
+                </tr>
+                <tr>
+                    <td class="kaire">Jonas</td>
+                    <td>Jonaitis</td>
+                    <td>jonaitis@gmail.com</td>
+                </tr>
+                <tr>
+                    <td class="kaire">Petras</td>
+                    <td>Petraitis</td>
+                    <td>petraitis@gmail.com</td>
+                </tr>
+            </table>
+       </div>
+</body>
+</html>
