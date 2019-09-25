@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS5 namu darbas</title>
+</head>
+
+<body>
+    <div>
+        Įveskite Jūsų amžiu:
+    </div>
+    <input id="age" type="number">
+    <button onclick="myFunction()">PATIKRINTI</button>
+    <p id="demo"></p>
+    <hr>
+    <div>
+        Jusu amzius:
+        <input id="age2">
+    </div>
+    <button onclick="tikrintiAmziu()">Pirmyn!</button>
+    <p id="demo2"></p>
+    <script>
+            function myFunction() {
+                var inputAge = document.getElementById("age");
+                    if (!inputAge.checkValidity()) {
+                    document.getElementById("demo").innerHTML = "Dar reikia paaugti";
+                    }
+                    else {
+                    document.getElementById("demo").innerHTML = "Taip, Tu pilnametis";
+                }
+                }
+         function tikrintiAmziu() {
+                var inputAmzius = document.getElementById("age2").value;
+                var x = (inputAmzius < 18) ? "false" : "true";
+                document.getElementById("demo2").innerHTML = x;
+                }
+    </script>
+</body>
+</html>
