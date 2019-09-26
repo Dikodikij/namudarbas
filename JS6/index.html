@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS6 namu darbas</title>
+</head>
+<body>
+    <button onclick="myFunction()">Pradekime</button>
+    <p id="demo"></p>
+    <hr>
+    <div> Vardas Pavarde </div>
+    <div>
+        <input id="real-value-input" placeholder="iveskite">
+        <button onclick="myNewFunction()">Siusti</button>
+    </div>
+    <div id="vardas"></div>
+        <script>
+            function myFunction () {
+              var txt;
+              var person = prompt("Prasau iveskite Varda ir Pavarde:", "Vardas Pavarde");
+              if (person == null || person == "") {
+                txt = "User cancelled the prompt.";
+              } else {
+                txt =  person + " ka tik prisijunge";
+              }
+              document.getElementById("demo").innerHTML = txt;
+            }
+            console.log('ka tik prisijunge kazkas');
+    function myNewFunction () {
+        var txt2, ivestasVardas;
+        ivestasVardas = document.getElementById("real-value-input").value;
+        txt2 = "ka tik prisijunge " + ivestasVardas;
+        document.getElementById("vardas").innerHTML = txt2;
+            }
+        </script>
+</body>
+</html>
